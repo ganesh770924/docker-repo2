@@ -1,9 +1,9 @@
 pipeline {
     agent { dockerfile true }
     stages {
-        stage('jdkstage') {
+        stage('pythonstage') {
             steps {
-                sh 'jdk --version'
+                sh 'python --version'
               
             }
         }
