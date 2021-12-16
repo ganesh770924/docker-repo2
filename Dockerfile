@@ -1,10 +1,5 @@
-FROM python:latest
-
-WORKDIR /home/ganesh
-
-COPY test.py ./
-
-CMD [ "python", "./test.py"]
-
+FROM alpine:latest
+RUN apk add curl
+COPY README /home
 
 
