@@ -1,5 +1,5 @@
 FROM alpine:latest
 RUN apk add curl
-COPY README /home
+COPY README.md /home
 
 
