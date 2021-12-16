@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pythonstage') {
             steps {
-                sh 'python --version'
+                sh 'cat README.md'
               
             }
         }
