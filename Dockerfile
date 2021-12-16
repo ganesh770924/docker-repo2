@@ -1,7 +1,10 @@
-FROM openjdk:8-jre-alpine
+FROM python:latest
 
-RUN mkdir /app
+WORKDIR /home/ganesh
 
-COPY *.jar /app
+COPY test.py ./
 
-CMD java -jar /app/app.jar
+CMD [ "python", "./test.py"]
+
+
+
